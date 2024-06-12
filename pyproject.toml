@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpsmatcher"
+version = "0.1.0"
+description = "Match a trace of GPS positions to a transportation graph"
+authors = [
+    { name="Loïc Bonnetain", email="loic.bonnetain@univ-eiffel.fr" }
+]
+license = { file="LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "numba",
+    "networkx",
+    "geopandas",
+    "pygeohash_fast",
+    "joblib",
+    "scipy",
+]
+keywords = ["map", "matching", "GPS", "gpsmatcher"]
+
+[project.urls]
+Repository = "https://github.com/lbonnetain/gpsmatcher.git"
+Issues = "https://github.com/lbonnetain/gpsmatcher/issues"
